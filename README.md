@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe Game</title>
 
 </head>
 <body>
@@ -62,7 +61,7 @@
 </ol>
 
 <h2>License</h2>
-<p>This project is open source and available under the <a href="LICENSE">MIT License</a>.</p>
+<p>This project is open source.</p>
 
 </body>
 </html>
