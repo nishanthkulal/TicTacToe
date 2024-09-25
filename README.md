@@ -4,35 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe Game</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        h2 {
-            color: #34495e;
-        }
-        p {
-            color: #555;
-        }
-        ul {
-            margin: 10px 0;
-            padding: 0;
-        }
-        li {
-            margin: 5px 0;
-        }
-        code {
-            background-color: #ecf0f1;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-    </style>
+
 </head>
 <body>
 
@@ -76,7 +48,7 @@
 <h2>Getting Started</h2>
 <ol>
     <li>Clone this repository:
-        <pre><code>git clone https://github.com/yourusername/tic-tac-toe.git</code></pre>
+        <pre><code>git clone https://github.com/nishanthkulal/TicTacToe.git</code></pre>
     </li>
     <li>Open the project in Unity 2021.3.43f1.</li>
     <li>Press Play to start the game.</li>
