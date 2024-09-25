@@ -5,18 +5,24 @@ using UnityEngine;
 
 public static class EventManager
 {
-    public static event Action OnButtonPress;
-    public static event Action<bool> OnPlayerTurn;
+    public static event Action<int> buttonId;
+    public static event Action OnButtonReset;
+    public static event Action<int,int,int> OnPlayerWin;
 
-    public static void ButtonPressed()
+
+    public static void ButtonIdMove(int Id)
     {
-        OnButtonPress?.Invoke();
+        buttonId?.Invoke(Id);
     }
 
-    public static void PlayerTurnCheck(bool player)
+    public static void ButtonResetCall()
     {
-        OnPlayerTurn?.Invoke(player);
+        OnButtonReset?.Invoke();
+    }
 
+    public static void PlayerWinDisplay(int a,int b,int c)
+    {
+        OnPlayerWin?.Invoke(a,b,c);
     }
     
 }
