@@ -12,6 +12,7 @@ public class PlayerMovements : MonoBehaviour
     [SerializeField] private GameObject HomeScreen;
     [SerializeField] private GameObject GameScreen;
     public bool player;
+    public bool windecided;
     private int[] playerTurns;
     private int totalMove = 8;
     
@@ -44,7 +45,11 @@ public class PlayerMovements : MonoBehaviour
 
         Debug.Log(index);
         WinnerCheck();
-        GameDrawCheck();
+        if(!windecided)
+        {
+            GameDrawCheck();
+        }
+        
 
     }
     private void GameDrawCheck()
@@ -135,6 +140,7 @@ public class PlayerMovements : MonoBehaviour
         {
             Wintext.text = "Player O Won";
         }
+        windecided = true;
         Invoke(nameof(GameOverScreenActive),2f);
     }
    private void GameOverScreenActive()
@@ -152,6 +158,8 @@ public class PlayerMovements : MonoBehaviour
 
     private void ScreenActive(bool gameOver, bool homeScreen,bool gameScreen )
     {
+
+       windecided=false;
         
         player = false;
         EventManager.ButtonResetCall();
