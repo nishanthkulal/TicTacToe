@@ -19,7 +19,8 @@ public class PlayerMovements : MonoBehaviour
 
     private void Start()
     {
-        playerTurns = new int[9];
+        HomeScreen.SetActive(true);
+         playerTurns = new int[9];
     }
 
     private void OnEnable()
